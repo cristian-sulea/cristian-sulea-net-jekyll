@@ -53,3 +53,30 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+###
+
+collections_dir: content
+
+collections:
+  blog:
+    output: true
+    sort_by: date
+
+defaults:
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
+      author: "Cri"
+  - scope:
+      path: "_blog/xyz"
+      type: "blog"
+    values:
+      layout: "post"
+      author: "Cri Sul"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
