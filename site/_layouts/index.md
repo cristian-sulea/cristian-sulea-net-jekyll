@@ -8,9 +8,7 @@
     {%- include body-header.html -%}
 
     <main class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
     {%- include body-footer.html -%}
