@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
 
@@ -68,15 +68,16 @@ defaults:
       path: ""
       type: "blog"
     values:
-      layout: "post"
-      author: "Cri"
+      layout: "index"
+      author: "Cristian Sulea"
+      permalink: /:collection/:name
   - scope:
       path: "_blog/xyz"
       type: "blog"
     values:
-      layout: "post"
+      layout: "index"
       author: "Cri Sul"
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "index"

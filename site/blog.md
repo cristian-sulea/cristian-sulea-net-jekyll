@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 title: Knowledge Base
 permalink: /blog/
 ---
@@ -8,7 +8,7 @@ permalink: /blog/
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-
+<hr>
   {%- if site.blog.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
