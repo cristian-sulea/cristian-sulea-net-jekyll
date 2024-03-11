@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: index
+show_site_title: true
 ---
 
 # Spring - Quick start tutorial

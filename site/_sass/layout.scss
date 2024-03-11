@@ -6,7 +6,7 @@
 .site-header {
   border-top: var(--default-border-size-bold) solid var(--default-text-color);
   border-bottom: var(--default-border-size) solid var(--default-border-color);
-  xheight: calc(1.5rem + 4px);
+  height: calc(2 * var(--site-title-text-size));
 }
 
 .site-footer {
@@ -23,17 +23,19 @@
 
 .site-title {
   font-size: var(--site-title-text-size);
+  line-height: calc(2 * var(--site-title-text-size));
 }
 
 .site-nav {
   position: absolute;
   font-size: 0.875rem;
-  top: calc(calc(var(--site-title-text-size) / 2) - 0.4375rem + var(--default-border-size-bold) + 2px);
+  top: calc(var(--site-title-text-size) - 0.875rem + var(--default-border-size-bold) + var(--default-border-size) + 0px);
   right: 0.5rem;
   background-color: var(--default-text-background-color);
   border: var(--default-border-size) solid var(--default-border-color);
   border-radius: var(--default-border-radius);
   text-align: right;
+  padding-top: 2px;
 
   .site-nav-trigger {
     display: none;

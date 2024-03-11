@@ -4,7 +4,7 @@
   --default-text-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --default-code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  --default-text-size: 24px;
+  --default-text-size: 20px;
   --default-text-weight: 400;
   
   /*--default-headings-weight: calc(var(--default-text-weight) + 100);*/
@@ -120,7 +120,11 @@ code {
   padding-right: 1px;
 }
 
-
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
 
 
 
