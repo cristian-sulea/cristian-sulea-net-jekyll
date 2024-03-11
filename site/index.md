@@ -1,9 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: index
-show_site_title: true
+layout: base
+site:
+  title: Cristian Sulea
+  description: Software Developer
+  title_hide: true
 ---
 
 # Spring - Quick start tutorial
