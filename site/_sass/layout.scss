@@ -1,7 +1,12 @@
 
+:root {
+  --site-title-text-size: 1.5rem;
+}
+
 .site-header {
   border-top: var(--default-border-size-bold) solid var(--default-text-color);
   border-bottom: var(--default-border-size) solid var(--default-border-color);
+  xheight: calc(1.5rem + 4px);
 }
 
 .site-footer {
@@ -16,10 +21,15 @@
   padding-left: 1rem;
 }
 
+.site-title {
+  font-size: var(--site-title-text-size);
+}
+
 .site-nav {
   position: absolute;
-  top: calc(var(--default-border-size-bold) + 1px);
-  right: 1px;
+  font-size: 0.875rem;
+  top: calc(calc(var(--site-title-text-size) / 2) - 0.4375rem + var(--default-border-size-bold) + 2px);
+  right: 0.5rem;
   background-color: var(--default-text-background-color);
   border: var(--default-border-size) solid var(--default-border-color);
   border-radius: var(--default-border-radius);
@@ -36,8 +46,8 @@
 
   .site-nav-menu-icon {
 
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
 
     > svg path {
       fill: var(--default-text-color);
@@ -55,13 +65,18 @@
 
   .page-link {
     display: block;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+
+    &:last-child {
+        margin-bottom: 0.4rem;
+    }
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
 
-    position: static;
+    xposition: static;
     float: right;
     border: 0;
 
@@ -81,10 +96,11 @@
       display: inline;
 
       &:not(:last-child) {
-        margin-right: 0.5rem;
+        margin-right: 0.4rem;
       }
       margin-left: auto;
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
 }
