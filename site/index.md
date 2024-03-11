@@ -55,12 +55,22 @@ A key element of Spring is infrastructural support at the application level: Spr
 
 The Spring dependencies are available for download via [Maven Central Repository](http://search.maven.org).
 
+### Spring dependencies
+
+#### Spring dependencies
+
+##### Spring dependencies
+
 A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
+
+###### Spring dependencies
+
+A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on <code>application-level</code> business logic, without unnecessary ties to specific deployment environments.
 
 *pom.xml*
 
 {% highlight xml %}
-<project
+<PJproject
     xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0

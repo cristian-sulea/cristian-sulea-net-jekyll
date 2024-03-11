@@ -4,7 +4,7 @@
   --default-text-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --default-code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  --default-text-size: 1.25rem;
+  --default-text-size: 20px;
   --default-text-weight: 400;
   
   /*--default-headings-weight: calc(var(--default-text-weight) + 100);*/
@@ -22,22 +22,29 @@
 
 }
 
+html {
+  font-size: var(--default-text-size);
+}
+
 main {
   margin: 1rem;
   padding: 1rem;
   border: 1px solid var(--default-border-color);
 }
 
+
 body,
 h1, h2, h3, h4, h5, h6, hr,
-p, blockquote, pre, code,
-dl, dd, ol, ul, figure {
+p, blockquote, ol, ul,
+pre, code,
+dl, dd, figure {
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, hr,
-p, blockquote, pre, code {
+p, blockquote, ol, ul,
+figure, pre, code {
   margin-bottom: 1rem;
 }
 
@@ -56,49 +63,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--default-headings-weight);
 }
 
-h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
-
-h2 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-@media (min-width: 1200px) {
-  h3 {
-    font-size: 1.75rem;
-  }
-}
-
-h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-  h4 {
-    font-size: 1.5rem;
-  }
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
+h1 { font-size: 3.0rem; font-weight: calc(var(--default-text-weight) - 100); }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1.0rem; }
 
 hr {
   color: var(--default-border-color);
@@ -108,26 +78,14 @@ hr {
 
 blockquote {
   color: var(--default-quote-color);
-  border-left: 4px solid var(--default-border-color);
+  border-left: 3px solid var(--default-border-color);
   padding-left: 1rem;
   font-style: italic;
-}
-
-pre,
-code {
-  font-family: var(--default-code-font);
-  font-size: 0.9375em;
-  border: 1px solid var(--default-border-color);
-  border-radius: 3px;
-  color: var(--default-code-color);
-  background-color: var(--default-code-background-color);
 }
 
 ol,
 ul {
   padding-left: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 ol ol,
@@ -137,6 +95,38 @@ ul ol {
   margin-bottom: 0;
 }
 
+pre,
+code {
+  font-family: var(--default-code-font);
+  font-size: 0.875rem;
+  border: 1px solid var(--default-border-color);
+  border-radius: 3px;
+  color: var(--default-code-color);
+  background-color: var(--default-code-background-color);
+}
+
+pre {
+  display: block;
+  overflow: auto;
+  padding: 0.875rem 0.875rem;
+  overflow-x: auto;
+}
+
+pre {
+  > code {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+code {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+
+
 
 
 b,
@@ -144,12 +134,10 @@ strong {
   font-weight: bolder;
 }
 
-
-
 pre,
 code,
 kbd,
 samp {
   font-family: var(--default-code-font);
-  font-size: 1em;
+  xfont-size: 1em;
 }
