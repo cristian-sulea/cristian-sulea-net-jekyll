@@ -18,6 +18,9 @@
   --default-code-background-color: #EADAB9;
   --default-quote-color: #919191;
   --default-border-color: #C6C6C6;
+  --default-border-size: 1px;
+  --default-border-size-bold: 0.2rem;
+  --default-border-radius: 3px;
 
 }
 
@@ -65,13 +68,13 @@ h6 { font-size: 1.0rem; }
 hr {
   color: var(--default-border-color);
   border: 0;
-  border-top: 1px solid;
+  border-top: var(--default-border-size) solid;
 }
 
 blockquote {
   font-style: italic;
   color: var(--default-quote-color);
-  border-left: 0.2rem solid var(--default-border-color);
+  border-left: var(--default-border-size-bold) solid var(--default-border-color);
   padding-left: 1rem;
 }
 
@@ -93,8 +96,8 @@ code {
   font-size: 0.875rem;
   color: var(--default-code-color);
   background-color: var(--default-code-background-color);
-  border: 1px solid var(--default-border-color);
-  border-radius: 3px;
+  border: var(--default-border-size) solid var(--default-border-color);
+  border-radius: var(--default-border-radius);
 }
 
 pre {

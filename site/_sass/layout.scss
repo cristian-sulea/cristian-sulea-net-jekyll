@@ -1,14 +1,14 @@
 
-.body-header {
-  border-top: 5px solid var(--default-text-color);
-  border-bottom: 1px solid var(--default-border-color);
+.site-header {
+  border-top: var(--default-border-size-bold) solid var(--default-text-color);
+  border-bottom: var(--default-border-size) solid var(--default-border-color);
 }
 
-.body-footer {
-  border-top: 1px solid var(--default-border-color);
+.site-footer {
+  border-top: var(--default-border-size) solid var(--default-border-color);
 }
 
-.body-wrapper {
+.site-wrapper {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -18,24 +18,25 @@
 
 .site-nav {
   position: absolute;
-  top: 6px;
+  top: calc(var(--default-border-size-bold) + 1px);
   right: 1px;
   background-color: var(--default-text-background-color);
-  border: 1px solid var(--default-border-color);
-  border-radius: 3px;
+  border: var(--default-border-size) solid var(--default-border-color);
+  border-radius: var(--default-border-radius);
   text-align: right;
 
-  .nav-trigger {
+  .site-nav-trigger {
     display: none;
   }
 
-  .menu-icon {
-    xfloat: right;
-    xwidth: 36px;
-    xheight: 36px;
-    xline-height: 0;
-    xpadding-top: 10px;
-    xtext-align: center;
+  label[for="site-nav-trigger"] {
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .site-nav-menu-icon {
+
+    margin-left: 0.5rem;
     margin-right: 0.5rem;
 
     > svg path {
@@ -43,28 +44,17 @@
     }
   }
 
-  label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  input ~ .trigger {
+  input ~ .site-nav-menu {
     clear: both;
     display: none;
   }
 
-  input:checked ~ .trigger {
+  input:checked ~ .site-nav-menu {
     display: block;
   }
 
   .page-link {
     display: block;
-    xcolor: text-color;
-
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -73,19 +63,17 @@
 
     position: static;
     float: right;
-    border: none;
+    border: 0;
 
-    xbackground-color: inherit;
-
-    label[for="nav-trigger"] {
+    label[for="site-nav-trigger"] {
       display: none;
     }
 
-    .menu-icon {
+    .site-nav-menu-icon {
       display: none;
     }
 
-    input ~ .trigger {
+    input ~ .site-nav-menu {
       display: block;
     }
 
@@ -96,7 +84,7 @@
         margin-right: 0.5rem;
       }
       margin-left: auto;
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
