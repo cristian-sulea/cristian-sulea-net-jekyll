@@ -33,6 +33,8 @@ A key element of **Spring** is infrastructural support at the application level:
 
 > A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
 
+A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
+
 ---
 
 A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
@@ -67,7 +69,7 @@ A key element of Spring is infrastructural support at the application level: Spr
 
 A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on <code>application-level</code> business logic, without unnecessary ties to specific deployment environments.
 
-*pom.xml*
+> pom.xml
 
 {% highlight xml %}
 <PJproject
