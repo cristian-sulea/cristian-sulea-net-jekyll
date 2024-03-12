@@ -6,6 +6,60 @@ site:
   title_hide: true
 ---
 
+# Cristian Sulea
+> Software Developer
+> - [<img src="assets/github2.svg" style="max-width: 1rem;">](http://google.com.au/) LinkedIn
+> - [<img src="assets/linkedin.svg" style="max-width: 1rem;">](http://google.com.au/) LinkedIn
+
+
+- [![GitHub](assets/github2.svgx)](https://example.com) [GitHub](https://example.com)
+- [<img src="assets/github.svg" style="max-width: 1rem;">](http://google.com.au/)
+
+> {%- include icons/linkedin.svg -%}
+
+## Experience
+
+
+
+### Senior Java Developer (& Software Architect)
+**PSS Prosoft Solutions**\
+Bucharest, Romania\
+*February 2008 - Present*
+
+Other roles:
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+- develop and manage pilot projects
+- develop and manage prototype projects to test the integration of various technologies
+- technical proposals
+- performance improvements
+  Senior Java Developer
+  Entrust | Craiova, Romania
+  July 2007 - February 2008 (8 months)
+
+Other roles:
+- Firm Administrator (and Partner)
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+
+### Senior Java Developer
+**Entrust | Craiova, Romania**\
+*July 2007 - February 2008 (8 months)*
+
+Other roles:
+- Firm Administrator (and Partner)
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+
 # Spring - Quick start tutorial
 
 The [Spring Framework](http://spring.io) is an open source application framework and inversion of control container for the Java platform.
