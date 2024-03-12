@@ -6,7 +6,7 @@
 
   --default-text-size: 20px;
   --default-text-weight: 400;
-  
+
   /*--default-headings-weight: calc(var(--default-text-weight) + 100);*/
   --default-headings-weight: var(--default-text-weight);
 
@@ -58,12 +58,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--default-headings-weight);
 }
 
-h1 { font-size: 3.0rem; font-weight: calc(var(--default-text-weight) - 100); }
-h2 { font-size: 2.0rem; }
+h1 { font-size: 3rem; font-weight: calc(var(--default-headings-weight) - 100); }
+h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1.1rem; }
-h6 { font-size: 1.0rem; }
+h6 { font-size: 1rem; }
 
 hr {
   color: var(--default-border-color);
@@ -120,23 +120,27 @@ code {
   padding-right: 1px;
 }
 
+b,
+strong {
+  font-weight: bolder;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
 
+@media (max-width: 600px) {
 
+  h1 { font-size: 2rem; font-weight: var(--default-headings-weight); }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.3rem; }
+  h4 { font-size: 1.2rem; }
+  h5 { font-size: 1.1rem; }
+  h6 { font-size: 1rem; }
 
-b,
-strong {
-  font-weight: bolder;
-}
-
-pre,
-code,
-kbd,
-samp {
-  font-family: var(--default-code-font);
-  xfont-size: 1em;
+  pre {
+    padding: 0;
+  }
 }

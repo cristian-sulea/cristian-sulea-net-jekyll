@@ -11,6 +11,8 @@
 
 .site-footer {
   border-top: var(--default-border-size) solid var(--default-border-color);
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .site-wrapper {
@@ -19,6 +21,13 @@
   margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+@media (max-width: 600px) {
+.site-wrapper {
+  padding-right: var(--default-border-size-bold);
+  padding-left: var(--default-border-size-bold);
+}
 }
 
 .site-title {
@@ -76,9 +85,9 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 600px) {
 
-    xposition: static;
+    /*position: static;*/
     float: right;
     border: 0;
 
